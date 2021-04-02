@@ -1,0 +1,460 @@
+{
+    "coworking":[
+        {
+            "name":"Coworking GARE!",
+            "founder": "Agence de développement local de Saint-Hubert (ASBL)",
+            "address": {
+                "street": "Rue des Ardennes",
+                "number": "14",
+                "postalCode": "6870",
+                "city": "Saint-Hubert"
+            },
+            "coordinates": [50.01982527584446, 5.293780097541719],
+            "website": "http://www.gare.space/",
+            "mail": "hello@gare.space",
+            "phone": "+32 (0)498 88 03 22",
+            "socials": {
+                "facebook": "https://www.facebook.com/CoworkingGARE",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Linc Coworking",
+            "founder": "Linc SA",
+            "address": {
+                "street": "rue de Luxembourg",
+                "number": "55",
+                "postalCode": "L-4391",
+                "city": "Pontpierre",
+                "country": "Luxembourg"
+            },
+            "coordinates": [49.5881778793846, 6.0413590066859815],
+            "website": "https://www.linc-coworking.lu",
+            "mail": "coworking@linc.lu",
+            "phone": "00352 26 57 07 57",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Le Jardin Secret",
+            "founder": "Paladium Coworking",
+            "address": {
+                "street": "rue des Mérovingiens",
+                "number": "10A",
+                "postalCode": "L-8070",
+                "city": "Bertrange",
+                "country": "Luxembourg"
+            },
+            "coordinates": [49.671650214648565, 6.02998922041111],
+            "website": "https://paladium.lu/jardin-secret/",
+            "mail": "",
+            "phone": "",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Urban Office",
+            "founder": "",
+            "address": {
+                "street": "Avenue du Blues",
+                "number": "9",
+                "postalCode": "L-4368",
+                "city": "Sanem",
+                "country": "Luxembourg"
+            },
+            "coordinates": [49.548969156083324, 5.909901463905049],
+            "website": "https://urbanoffice.lu/",
+            "mail": "",
+            "phone": "",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Le cellier du Baudet",
+            "founder": "",
+            "address": {
+                "street": "Rue Des Munos",
+                "number": "100",
+                "postalCode": "6880",
+                "city": "Bertrix",
+                "country": ""
+            },
+            "coordinates": [49.8693183239896, 5.253506410830824],
+            "website": "http://www.le-cellier-du-baudet.be/",
+            "mail": "",
+            "phone": "",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"NOburo",
+            "founder": "",
+            "address": {
+                "street": "Place Chevert",
+                "number": "11",
+                "postalCode": "55100",
+                "city": "Verdun",
+                "country": "France"
+            },
+            "coordinates": [49.22468768899016, 5.38198257597233],
+            "website": "https://www.noburo.fr/",
+            "mail": "info@noburo.fr",
+            "phone": "+33 6 88 26 31 03",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name": "La brique",
+            "founder": "Louis Gobron",
+            "address": {
+                "street": "Avenue de Blagny",
+                "number": 24,
+                "postalCode": 8110,
+                "city": "Carignan",
+                "country": "France"
+            },
+            "coordinates": [49.6268566, 5.1757624],
+            "website": "http://www.coworking-ardennes.fr/",
+            "mail": "info@coworking-ardennes.fr",
+            "phone": "06 34 21 38 02",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
+            }
+        },
+        {
+            "name": "Gemadom espace d’affaires",
+            "founder": "",
+            "address":{
+                "street": "Route de Gémenos",
+                "number": 1120,
+                "postalCode": 13400,
+                "city": "Aubange",
+                "country": "France"
+            },
+            "coordinates": [49.2963455, 5.5830204],
+            "website": "https://www.neo-nomade.com/",
+            "mail": "contact@neo-nomade.com",
+            "phone": 179732020,
+            "socials":{
+                "facebook": "",
+                "twitter": "",
+                "instagram": "",
+                "linkedin": ""
+            }
+        },
+        {
+            "name":"e-Square",
+            "founder": "L'E-Square A.S.B.L",
+            "address": {
+                "street": "Rue Victor Libert",
+                "number": "36J",
+                "postalCode": "6900",
+                "city": "Marche-en-Famenne",
+                "country": ""
+            },
+            "coordinates": [50.240595038905674, 5.334782114646914],
+            "website": "https://e-square.marche.be/",
+            "mail": "e-square@marche.be",
+            "phone": "+32 (0) 491 96 33 65",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Parc Naturel De Gaume asbl",
+            "founder": "",
+            "address": {
+                "street": "Rue Camille Joset",
+                "number": "1",
+                "postalCode": "6730",
+                "city": "Tintigny",
+                "country": ""
+            },
+            "coordinates": [49.667342170685856, 5.8203597259420725],
+            "website": "https://parc-naturel-gaume.be/",
+            "mail": "contact@pndg.be",
+            "phone": "+32 (0)63 45 71 26",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Greenlab Coworking",
+            "founder": "Greenlab Coworking (ASBL)",
+            "address": {
+                "street": "Zone Artisanale - Rue Claude Berg",
+                "number": "34",
+                "postalCode": "6700",
+                "city": "Arlon"
+            },
+            "coordinates": [49.6488285,5.8260931],
+            "website": "http://www.greenlab-coworking.com/",
+            "mail": "contact@greenlab-coworking.com",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/GreenlabCoworking/",
+                "twitter": "https://twitter.com/greenlabcowork",
+                "instagram": "https://www.instagram.com/greenlabcowork/?hl=fr"
+            }
+        },
+        {
+            "name":"Beauraing Coworking",
+            "founder": "Pôle Beaurinois de Formation et de Développement (ASBL)",
+            "address": {
+                "street": "Faubourg Saint-Martin",
+                "number": "22",
+                "postalCode": "5570",
+                "city": "Beauraing"
+            },
+            "coordinates": [50.1095277,4.9541233],
+            "website": "http://beauraingcoworking.be/",
+            "mail": "contact@beauraingcoworking.be",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/pg/BeauraingCoworking"
+            }
+        },
+        {
+            "name":"Je m'connecte Coworking Jemeppe",
+            "founder": "Agence de Développement Local de Jemeppe-sur-Sambre",
+            "address": {
+                "street": "Rue Emile Vandervelde",
+                "number": "17",
+                "postalCode": "5190",
+                "city": "Jemeppe-sur-Sambre"
+            },
+            "coordinates": [50.4442158,4.6802398],
+            "website": "https://www.jemconnecte.be/",
+            "mail": "jemconnecte@adlj.be",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/pg/jemconnecte"
+            }
+        },
+        {
+            "name":"L'e-Square Coworking & Fablab",
+            "founder": "Ville de Marche-en-Famenne",
+            "address": {
+                "street": "Rue Victor Libert",
+                "number": "36",
+                "postalCode": "6900",
+                "city": "Marche-en-Famenne"
+            },
+            "coordinates": [50.228265,5.335673],
+            "website": "https://e-square.marche.be/",
+            "mail": "e-square@marche.be",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/LeSquareMarche/",
+                "twitter": "https://twitter.com/LeSquareMarche"
+            }
+        },
+        {
+            "name":"Cristal Hub",
+            "founder": "Cristal Hub",
+            "address": {
+                "street": "Quai Louva",
+                "number": "21",
+                "postalCode": "4102",
+                "city": "Seraing"
+            },
+            "coordinates": [50.6070014,5.5403139],
+            "website": "http://www.cristalhub.be/",
+            "mail": "info@cristalhub.be",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/CristalHub",
+                "twitter": "https://twitter.com/CristalHub",
+                "instagram": "https://www.instagram.com/cristal_hub"
+            }
+        },
+        {
+            "name":"ESCO Frasnes",
+            "founder": "Agence Intercommunale de développement des arrondissements de Tournai, d'Ath et de communes avoisinantes (SCRL)",
+            "address": {
+                "street": "Rue Henri Lemaire",
+                "number": "2",
+                "postalCode": "7911",
+                "city": "Frasnes-lez-Anvaing"
+            },
+            "coordinates": [50.663497,3.612474],
+            "website": "http://www.escoworking.be/",
+            "mail": "menegazzi@ideta.be",
+            "phone": "",
+            "socials": {
+                "facebook": "https://www.facebook.com/espacecoworkingtournai"
+            }
+        },
+        {
+            "name":"La Ferme Coworking",
+            "founder": "Ville de Chimay",
+            "address": {
+                "street": "Rue Rogier",
+                "number": "10",
+                "postalCode": "6460",
+                "city": "Chimay"
+            },
+            "coordinates": [50.0492786,4.31677],
+            "website": "http://la-ferme.be/",
+            "mail": "nicolas@la-ferme.be",
+            "phone": "060214935",
+            "socials": {
+                "facebook": "https://www.facebook.com/pg/laferme/"
+            }
+        },
+        {
+            "name":"Louvain Coworking Space",
+            "founder": "Louvain Coworking Space",
+            "address": {
+                "street": "Chemin du Cyclotron",
+                "number": "6",
+                "postalCode": "1348",
+                "city": "Ottignies-Louvain-la-Neuve"
+            },
+            "coordinates": [50.6655232,4.62482],
+            "website": "http://www.louvaincoworking.be/",
+            "mail": "info@louvaincoworking.com",
+            "phone": "010390018",
+            "socials": {
+                "facebook": "https://www.facebook.com/LouvainCowork",
+                "twitter": "https://twitter.com/louvaincowork",
+                "linkedin": "https://www.linkedin.com/company/louvain-coworking-space?trk=hb_tab_compy_id_2771886"
+            }
+        },
+        {
+            "name":"The Mug Enghien",
+            "founder": "The Mug Enghien (SPRL)",
+            "address": {
+                "street": "Place Pierre Delannoy",
+                "number": "50",
+                "postalCode": "7850",
+                "city": "Enghien"
+            },
+            "coordinates": [50.6927152,4.0389675],
+            "website": "http://www.themug.be/enghien/",
+            "mail": "marine@themug.be",
+            "phone": "028993636",
+            "socials": {
+                "facebook": "https://www.facebook.com/The-Mug-1016007448536080/",
+                "twitter": "https://twitter.com/TheMugBE?lang=fr"
+            }
+        }
+    ],
+    "rooms": [
+        {
+            "name": "Hackerspace",
+            "description": "Une pièce avec autant de bureau et de prises pour installer des ordinateurs qu'il y a de places.",
+            "capacity": 40
+        },
+        {
+            "name": "Espace de conférence",
+            "description": "Salle avec estrade et pupitre de conférencier.",
+            "capacity": 150
+        },
+        {
+            "name": "Salle multifonction 1",
+            "description": "Salle multifonction de 200m².",
+            "capacity": 100
+        },
+        {
+            "name": "Salle multifonction 2",
+            "description": "Salle multifonction de 300m².",
+            "capacity": 150
+        },
+        {
+            "name": "Salle multifonction 3",
+            "description": "Salle multifonction de 100m².",
+            "capacity": 40
+        },
+        {
+            "name": "Salle d'exposition",
+            "description": "Salle munie de dispositifs permettant d'afficher diverses œuvres dans un espace de 200m².",
+            "capacity": 40
+        },
+        {
+            "name": "Cuisine",
+            "description": "Cuisine équipée et fournie en ustensiles pour servir jusqu'à 100 couverts.",
+            "capacity": 10
+        },
+        {
+            "name": "Parc",
+            "description": "Espace pelousé de 500m².",
+            "capacity": 250
+        }
+    ],
+    "materials": {
+        "multimedia": [
+            {
+                "object": "projector",
+                "quantity": 4
+            },
+            {
+                "object": "projector screen",
+                "quantity": 4
+            },
+            {
+                "object": "microphone",
+                "quantity": 10
+            }
+        ],
+        "catering": [
+            {
+                "object": "chair",
+                "quantity": 200
+            },
+            {
+                "object": "bench",
+                "quantity": 50
+            },
+            {
+                "object": "table",
+                "quantity": 50
+            },
+            {
+                "object": "glasses",
+                "quantity": 600
+            }
+        ],
+        "events": [
+            {
+                "object": "projector lights",
+                "quantity": 10
+            },
+            {
+                "object": "color lights",
+                "quantity": 10
+            },
+            {
+                "object": "scene part",
+                "quantity": 10
+            },
+            {
+                "object": "lectern",
+                "quantity": 2
+            }
+        ]
+    }
+}
