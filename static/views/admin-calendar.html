@@ -4,44 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Admin - Rooms</title>
+    <title>Admin - Calendar</title>
 </head>
 <body>
     <header class="header admin">
         <p class="header__title">Tableau de bord - Gestion de salles</p>
         <img class="header__profile" src="../img/Maud_en_ete.jpg" alt="profile picture">
     </header>
-    <main class="admin-room">
-        <section class="admin-room__content">
-            <div class="admin-room__thumbnail">
-                <img class="admin-room__thumbnail-image" src="../img/coworking.jpeg" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Salle multifonction 1</p>
-            </div>
-            <div class="admin-room__thumbnail problem">
-                <img class="admin-room__thumbnail-image" src="../img/coworking_at_home.png" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Salle multifonction 2</p>
-            </div>
-            <div class="admin-room__thumbnail">
-                <img class="admin-room__thumbnail-image" src="../img/coworking_cocoon.png" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Salle multifonction 3</p>
-            </div>
-            <div class="admin-room__thumbnail">
-                <img class="admin-room__thumbnail-image" src="../img/coworking_garden.jpg" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Parc</p>
-            </div>
-            <div class="admin-room__thumbnail">
-                <img class="admin-room__thumbnail-image" src="../img/coworking_meeting_room.jpeg" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Salle de conférence</p>
-            </div>
-            <div class="admin-room__thumbnail problem">
-                <img class="admin-room__thumbnail-image" src="../img/salle_de_reunion.jpeg" alt="room thumbnail">
-                <p class="admin-room__thumbnail-name">Salle web</p>
-            </div>
+    <main class="admin-calendar">
+        <section class="admin-calendar__content">
+            <img src="../img/coworking.jpeg" alt="" class="admin-calendar__thumbnail-image">
         </section>
-        <section class="admin__modal" id="modalRoom">
+        <section class="admin__modal" id="modalCalendar">
             <div class="admin__modal-panel">
-                <div class="admin__modal-close" id="modalRoomClose"></div>
-                <h2 class="admin__modal-title" id="modalRoomTitle">Salle 2</h2>
+                <div class="admin__modal-close" id="modalCalendarClose"></div>
+                <h2 class="admin__modal-title" id="modalCalendarTitle">Salle 2</h2>
                 <div class="admin__modal-content">
                     <div class="admin__modal-column">
                         <h2 class="admin__modal-subtitle">Locataires</h2>
@@ -82,6 +59,6 @@
             <div class="admin__modal-background"></div>
         </section>
     </main>
-    <script src="../js/modalRoom.js"></script>
+    <script src="../js/modalCalendar.js"></script>
 </body>
 </html>
