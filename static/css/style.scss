@@ -6,3 +6,71 @@
 
 $primary-user: #204243;
 $primary-admin: #9D3B4E;
+
+.navbar{
+    &-brand
+    {
+        color: white;
+        font-size: 1.5rem;
+    }
+    &-user{
+        background-color: $primary-user;
+        color: white;
+        font-size: 1.5rem;
+    }
+    &-part
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.nav-link{
+    color: white;
+}
+.identity
+{
+    width:3rem;
+    height: 3rem;
+    border-radius: 30px;
+    border-right: 5%;
+}
+.row_card
+{
+    justify-content: space-evenly;
+}
+.card{
+    width: 20rem;
+    margin-top: 3rem;
+    
+    a{
+     text-decoration: none;
+     color:white;
+    }
+    &-title
+    {
+        background-color: $primary-user;
+        color:white;
+        height: 4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    
+    &-img
+    {
+        overflow:hidden;
+    }
+}
+
+.fa
+{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+}
+//______________________________Réservation Salles__________________________
+.calendar{
+    width:5rem;
+}
