@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Admin - Rooms</title>
+</head>
+<body>
+    <header class="header admin">
+        <p class="header__title">Tableau de bord - Gestion de salles</p>
+        <img class="header__profile" src="../img/Maud_en_ete.jpg" alt="profile picture">
+    </header>
+    <main class="admin-room">
+        <section class="admin-room__content">
+            <div class="admin-room__thumbnail">
+                <img class="admin-room__thumbnail-image" src="../img/coworking.jpeg" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Salle multifonction 1</p>
+            </div>
+            <div class="admin-room__thumbnail problem">
+                <img class="admin-room__thumbnail-image" src="../img/coworking_at_home.png" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Salle multifonction 2</p>
+            </div>
+            <div class="admin-room__thumbnail">
+                <img class="admin-room__thumbnail-image" src="../img/coworking_cocoon.png" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Salle multifonction 3</p>
+            </div>
+            <div class="admin-room__thumbnail">
+                <img class="admin-room__thumbnail-image" src="../img/coworking_garden.jpg" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Parc</p>
+            </div>
+            <div class="admin-room__thumbnail">
+                <img class="admin-room__thumbnail-image" src="../img/coworking_meeting_room.jpeg" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Salle de conférence</p>
+            </div>
+            <div class="admin-room__thumbnail problem">
+                <img class="admin-room__thumbnail-image" src="../img/salle_de_reunion.jpeg" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Salle web</p>
+            </div>
+        </section>
+        <section class="admin-room__modal" id="modalRoom">
+            <div class="admin-room__modal-panel">
+                <div class="admin-room__modal-close" id="modalRoomClose"></div>
+                <h2 class="admin-room__modal-title" id="modalRoomTitle">Salle 2</h2>
+                <div class="admin-room__modal-content">
+                    <div class="admin-room__modal-column">
+                        <h2 class="admin-room__modal-subtitle">Locataires</h2>
+                        <div class="admin-room__modal-rent">
+                            <ul class="admin-room__modal-list">
+                                <li class="admin-room__modal-item"><strong>Précédent locataire : </strong><br>Les joyeux lurons</li>
+                                <li class="admin-room__modal-item"><strong>Date : </strong>31/03/2021 de 10h30 à 16h</li>
+                            </ul>
+                        </div>
+                        <div class="admin-room__modal-rent">
+                            <ul class="admin-room__modal-list">
+                                <li class="admin-room__modal-item"><strong>Locataire actuel : </strong><br>HackBots</li>
+                                <li class="admin-room__modal-item"><strong>Date : </strong>03/04/2021 de 13h30 à 17h</li>
+                                <li class="admin-room__modal-item"><strong>Nombre de participants : </strong>40</li>
+                        </ul>
+                        </div>
+                        <div class="admin-room__modal-rent">
+                            <ul class="admin-room__modal-list">
+                                <li class="admin-room__modal-item"><strong>Prochain locataire : </strong><br>François Asselineau</li>
+                                <li class="admin-room__modal-item"><strong>Date : </strong>10/04/2021 de 8h30 à 12h</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="admin-room__modal-column">
+                        <h2 class="admin-room__modal-subtitle">État des lieux</h2>
+                        <ul class="admin-room__modal-list">
+                            <li class="admin-room__modal-item">Projecteur manquant</li>
+                            <li class="admin-room__modal-item">Personnes présentes : 8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-room__modal-background"></div>
+        </section>
+    </main>
+    <script src="../js/modal.js"></script>
+</body>
+</html>

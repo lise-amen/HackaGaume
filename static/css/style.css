@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 5rem;
+  height: 5rem;
+  color: white;
+  font-size: 2rem;
+}
+.header__title {
+  margin: auto 2rem;
+}
+.header__profile {
+  height: 80%;
+  border-radius: 50%;
+  margin: auto 2rem;
+}
+.header.user {
+  background-color: #204243;
+}
+.header.admin {
+  background-color: #9D3B4E;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+}
+
+.admin-room__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.admin-room__thumbnail {
+  min-width: 30rem;
+  margin: 3rem;
+  border: 0.5rem solid green;
+  border-radius: 2rem;
+  width: 25%;
+  height: 22rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: scale 0.6s;
+}
+.admin-room__thumbnail-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: 50% 70%;
+  -webkit-filter: brightness(60%);
+  -moz-filter: brightness(60%);
+  -ms-filter: brightness(60%);
+  -o-filter: brightness(60%);
+  filter: brightness(60%);
+  transition: scale 0.6s;
+}
+.admin-room__thumbnail-image:hover {
+  scale: 1.05;
+}
+.admin-room__thumbnail-name {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0.2rem 0.2rem 0.2rem black;
+}
+.admin-room__thumbnail:hover {
+  scale: 1.02;
+}
+.admin-room__thumbnail.problem {
+  border-color: red;
+}
+.admin-room__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.admin-room__modal-background {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+.admin-room__modal-panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 5;
+  width: 60%;
+  min-width: 35rem;
+  height: 80vh;
+  min-width: 34rem;
+  min-height: 34rem;
+  background-color: white;
+  border-radius: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem black;
+  overflow: hidden;
+}
+.admin-room__modal-close {
+  position: absolute;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  background-color: white;
+  background-image: url("../img/x.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  border-radius: 50%;
+  -webkit-filter: invert(100%);
+  -moz-filter: invert(100%);
+  -ms-filter: invert(100%);
+  -o-filter: invert(100%);
+  filter: invert(100%);
+  transition: filter 0.6s;
+  border: 0.2rem solid white;
+}
+.admin-room__modal-close:hover {
+  filter: none;
+}
+.admin-room__modal-title {
+  width: 100%;
+  font-size: 2.3rem;
+  background-color: #9D3B4E;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+.admin-room__modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: none;
+}
+.admin-room__modal-column {
+  width: 50%;
+  padding: 2rem;
+}
+.admin-room__modal-rent {
+  border: 0.1rem solid #9D3B4E;
+  border-radius: 0.5rem;
+  margin: 0.8rem;
+}
+.admin-room__modal-list {
+  margin: 1rem;
+  list-style: none;
+}
+.admin-room__modal-item {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+}
+.admin-room__modal.active {
+  opacity: 1;
+  pointer-events: all;
+}

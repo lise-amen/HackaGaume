@@ -6,3 +6,199 @@
 
 $primary-user: #204243;
 $primary-admin: #9D3B4E;
+
+@mixin flex($direction: row, $justify: center, $align: center) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+@mixin image-wrapper($width: auto, $height: auto, $position: relative) {
+    width: $width;
+    height: $height;
+    position: $position;
+    overflow: hidden;
+    @include flex();
+}
+@mixin image($top: 0, $left: 0, $positionX: 50%, $positionY: 50%) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: $positionX $positionY;
+}
+@mixin filter($filter-type, $filter-amount) { 
+    -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+    -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+    -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+    -o-filter: $filter-type+unquote('(#{$filter-amount})');
+    filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    @include flex(row, space-between);
+    width: 100%;
+    min-height: 5rem;
+    height: 5rem;
+    color: white;
+    font-size: 2rem;
+    &__title {
+        margin: auto 2rem;
+    }
+    &__profile {
+        height: 80%;
+        border-radius: 50%;
+        margin: auto 2rem;
+    }
+    &.user {
+        background-color: $primary-user;
+    }
+    &.admin {
+        background-color: $primary-admin;
+    }
+}
+main {
+    flex: 1;
+    width: 100%;
+}
+
+.admin-room {
+    &__content {
+        width: 100%;
+        @include flex();
+        flex-wrap: wrap;
+    }
+    &__thumbnail {
+        min-width: 30rem;
+        margin: 3rem;
+        border: 0.5rem solid green;
+        border-radius: 2rem;
+        @include image-wrapper(25%, 22rem);
+        transition: scale 0.6s;
+        &-image {
+            @include image(0,0,50%,70%);
+            @include filter(brightness, 60%);
+            transition: scale 0.6s;
+            &:hover {
+                scale: 1.05;
+            }
+        }
+        &-name {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-shadow: 0.2rem 0.2rem 0.2rem black;
+        }
+        &:hover{
+            scale: 1.02;
+        }
+        &.problem {
+            border-color: red;
+        }
+    }
+    &__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s;
+        @include flex();
+        &-background {
+            position: absolute;
+            z-index: 4;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.6;
+        }
+        &-panel {
+            position: relative;
+            @include flex(column, flex-start, flex-start);
+            z-index: 5;
+            width: 60%;
+            min-width: 35rem;
+            height: 80vh;
+            min-width: 34rem;
+            min-height: 34rem;
+            background-color: white;
+            border-radius: 2rem;
+            box-shadow: 0.2rem 0.2rem 0.5rem black;
+            overflow: hidden;
+        }
+        &-close {
+            position: absolute;
+            box-sizing: border-box;
+            @include flex;
+            width: 3rem;
+            height: 3rem;
+            top: 0;
+            right: 0;
+            margin: 0.5rem;
+            background-color: white;
+            background-image: url("../img/x.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            border-radius: 50%;
+            @include filter(invert, 100%);
+            transition: filter 0.6s;
+            border: 0.2rem solid white;
+            &:hover {
+                filter: none;
+            }
+        }
+        &-title {
+            width: 100%;
+            font-size: 2.3rem;
+            background-color: $primary-admin;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        &-content {
+            width: 100%;
+            @include flex(row, flex-start, flex-start);
+            flex-wrap: none;
+        }
+        &-column {
+            width: 50%;
+            padding: 2rem;
+        }
+        &-rent {
+            border: 0.1rem solid $primary-admin;
+            border-radius: 0.5rem;
+            margin: 0.8rem;
+        }
+        &-list {
+            margin: 1rem;
+            list-style: none;
+        }
+        &-item {
+            margin-bottom: 1.2rem;
+            font-size: 1.2rem;
+        }
+        &.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+}
