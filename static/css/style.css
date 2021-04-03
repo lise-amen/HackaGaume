@@ -17,9 +17,7 @@
   font-size: 1.5rem;
 }
 .navbar-home {
-  background-image: url("../img/duotone_gaume.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #204243;
   color: white;
   font-size: 1.5rem;
 }
@@ -82,10 +80,6 @@ footer {
   padding-top: 5rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  background-image: url("../img/duotone_gaume.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  backdrop-filter: blur(2px);
 }
 
 .number {
@@ -133,7 +127,7 @@ footer {
   margin-top: 4rem;
 }
 
-button {
+button, .btn-material {
   background-color: #f4c011 !important;
   color: white;
   border-radius: 15px;
@@ -141,7 +135,7 @@ button {
 }
 
 .btn-material {
-  color: white;
+  color: #204243;
   margin-left: 3rem;
 }
 
@@ -161,6 +155,11 @@ button {
   height: 100%;
 }
 
+.location_film {
+  width: 30rem;
+  height: 30rem;
+}
+
 .blanco {
   background-color: white;
   width: 22rem;
@@ -171,10 +170,31 @@ button {
 .form_blanco {
   background-color: white;
   width: 22rem;
-  border: 1px solid white;
+  border: 1px solid #204243;
   border-radius: 5px;
 }
 
 h3 {
   background-color: #204243;
+}
+
+.container-connect {
+  display: flex;
+  flex-direction: row;
+}
+
+.map_connect {
+  width: 20rem;
+  height: 20rem;
+}
+
+.colon2 {
+  width: 100%;
+}
+
+.form_zip {
+  border: 1px solid #204243;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 22rem;
 }
