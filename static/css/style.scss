@@ -201,20 +201,13 @@ h3
     background-color: $primary-user
 }
 //_________________________Coworking__________________
-.container-connect
-{
-    display: flex;
-    flex-direction: row;
-}
+
 .map_connect
 {
     width:20rem;
     height: 20rem;
 }
-.colon2
-{
-    width: 100%;
-}
+
 .form_zip
 {
     border: 1px solid $primary-user;

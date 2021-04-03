@@ -178,18 +178,9 @@ h3 {
   background-color: #204243;
 }
 
-.container-connect {
-  display: flex;
-  flex-direction: row;
-}
-
 .map_connect {
   width: 20rem;
   height: 20rem;
-}
-
-.colon2 {
-  width: 100%;
 }
 
 .form_zip {

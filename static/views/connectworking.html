@@ -39,224 +39,210 @@
  </nav>
  <div class="container-fluid container_location">
    <div class="row">
-    <div class="col-12 col-md-6 col-lg-4 ">
-      <div class="instruction h3 row"><img class="number" src="../img/1.svg"><p>Choisissez un horaire</p></div>
-        <div class="blanco">
-          <div class="calendar " id='calendar'></div>
-        </div>
-        <div class="time">
-          <label for="appt">Début</label>
-          <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
-          <label for="end">Fin</label>
-          <input type="time" id="appt" name="end" min="09:00" max="18:00" required>
-        </div>
-        <input class="form_zip" placeholder="Code postal">
-        </input>
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-      <div class="instruction h3 row"><img class="number" src="../img/2.svg"><p>Mon profil</p></div>
-      <form class="form_room form_blanco">
-        <div class="h3">Secteur d'activité</div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Informatique
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Communication
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Environnement
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Aide à la personne
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Vente
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Art
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Culture
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Enseignement
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Droit
-          </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-          </div>
-      </form>
-      <button class="btn">Je valide</button>
-
-    </div>
-    <div class="col-12 col-md-6 col-lg-4">
-        <div class="instruction h3 row"><img class="number" src="../img/2.svg"><p>Profil recherché</p></div>
-      <form class="form_room form_blanco">
-        <div class="h3">Secteur d'activité</div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Informatique
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Communication
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Environnement
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Aide à la personne
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Vente
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Art
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Culture
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Enseignement
-          </label>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-          <label class="form-check-label" for="flexCheckChecked">
-            Droit
-          </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-        </div>
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Droit
-            </label>
-        </div>
-      </form>
-      <button class="btn">Je valide</button>
-    </div>
-        <div class="row">
-            <div class="colon2 col-sm-12 col-md-6 col-lg-4">
-                <img class="map_connect" src="../img/coworking_map.jpeg">
-            </div>
-            <div class="col-12 col-lg-8">
-                <div class="row">
-                    <title></title>
-                    <div class="row">
-                        <button class="btn">Tag Coworking</button>
-                        <button class="btn">Tag Café Club</button>
-                    </div>
-                    <div class="row">
-                        <p>Je voudrais</p>
-                    </div>
-                    <button class="btn">Valider</button>
+            <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="instruction h3 row"><img class="number" src="../img/1.svg"><p>Choisissez un horaire</p></div>
+                <div class="blanco">
+                <div class="calendar " id='calendar'></div>
+                </div>
+                <div class="time">
+                <label for="appt">Début</label>
+                <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+                <label for="end">Fin</label>
+                <input type="time" id="appt" name="end" min="09:00" max="18:00" required>
                 </div>
             </div>
-        </div>   
-      </div> 
-</div>
-<footer></footer>
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="instruction h3 row"><img class="number" src="../img/2.svg"><p>Mon profil</p></div>
+            <form class="form_room form_blanco">
+                <div class="h3">Secteur d'activité</div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Informatique
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Communication
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Environnement
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Aide à la personne
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Vente
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Art
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Culture
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Enseignement
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+            </form>
+            <button class="btn">Je valide</button>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="instruction h3 row"><img class="number" src="../img/2.svg"><p>Profil recherché</p></div>
+            <form class="form_room form_blanco">
+                <div class="h3">Secteur d'activité</div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Informatique
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Communication
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Environnement
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Aide à la personne
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Vente
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Art
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Culture
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Enseignement
+                </label>
+                </div>
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Droit
+                    </label>
+                </div>
+            </form>
+            <button class="btn">Je valide</button>
+    </div>
+    <div class="row">
+        <div class=" colon_2 col-12 col-lg-4">
+            <input class="form_zip" placeholder="Code postal"></input>
+            <div class="colon2 col-sm-12 col-md-6 col-lg-4">
+                <img class="map_connect" src="../img/coworking_map.jpeg">
+            </div>  
+        </div> 
+    </div> 
+
+    <footer></footer>
     <script>
 
         document.addEventListener('DOMContentLoaded', function() {
@@ -271,3 +257,18 @@
       </script>
 </body>
 </html>
+
+<!-- <div class="col-12 col-lg-8">
+    <div class="row">
+        <title></title>
+        <div class="row">
+            <button class="btn">Tag Coworking</button>
+            <button class="btn">Tag Café Club</button>
+        </div>
+        <div class="row">
+            <p>Je voudrais</p>
+        </div>
+        <button class="btn">Valider</button>
+    </div>
+</div>
+</div>    -->
