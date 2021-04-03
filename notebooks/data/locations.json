@@ -1,6 +1,106 @@
 {
     "coworking":[
         {
+            "name":"Trapeze Coworking",
+            "founder": "",
+            "address": {
+                "street": "Rue Hannequin",
+                "number": "14 bis",
+                "postalCode": "51100",
+                "city": "Reims",
+                "country": "France"
+            },
+            "coordinates": [49.30935723861746, 4.027087395552847],
+            "website": "https://www.trapezecoworking.tumblr.com/",
+            "mail": "",
+            "phone": "",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"La Brique",
+            "founder": "",
+            "address": {
+                "street": "Avenue de Blagny",
+                "number": "24",
+                "postalCode": "08110",
+                "city": "Carignan",
+                "country": "France"
+            },
+            "coordinates": [49.6483342246771, 5.1738552561315325],
+            "website": "http://www.coworking-ardennes.fr/",
+            "mail": "",
+            "phone": "+33 6 34 21 38 02",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Blossoma",
+            "founder": "",
+            "address": {
+                "street": "Place Charlemagne",
+                "number": "33",
+                "postalCode": "08130",
+                "city": "Attoigny",
+                "country": "France"
+            },
+            "coordinates": [49.51144733588038, 4.581565361778515],
+            "website": "https://www.blossoma.fr/",
+            "mail": "",
+            "phone": "+33 6 34 21 38 02",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"La Quincaillerie",
+            "founder": "",
+            "address": {
+                "street": "Avenue Charles de Gaulle",
+                "number": "22",
+                "postalCode": "23000",
+                "city": "Giuéret",
+                "country": "France"
+            },
+            "coordinates": [46.29028967519015, 1.9109632222206145],
+            "website": "https://www.laquincaillerie.tl/",
+            "mail": "",
+            "phone": "+33 5 55 41 45 13",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
+            "name":"Palo Ardo Coworking",
+            "founder": "",
+            "address": {
+                "street": "Avenue d'Arches",
+                "number": "29",
+                "postalCode": "08000",
+                "city": "Charleville-Mézières",
+                "country": "France"
+            },
+            "coordinates": [49.7837289097171, 4.721641327570645],
+            "website": "http://paloardo.fr/",
+            "mail": "",
+            "phone": "+33 3 24 22 49 60",
+            "socials": {
+                "facebook": "",
+                "twitter": "",
+                "instagram": ""
+            }
+        },
+        {
             "name":"Coworking GARE!",
             "founder": "Agence de développement local de Saint-Hubert (ASBL)",
             "address": {
