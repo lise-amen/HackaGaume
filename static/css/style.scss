@@ -205,6 +205,7 @@ main {
         &__subtitle {
             font-size: 2rem;
             padding: 1rem;
+            background-color: transparent;
         }
         &__list {
             margin: 1rem;
@@ -366,9 +367,10 @@ main {
     }
     &-home
     {
-        background-image: url("../img/duotone_gaume.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-color:$primary-user;
+        // background-image: url("../img/duotone_gaume.jpg");
+        // background-repeat: no-repeat;
+        // background-size: cover;
         color: white;
         font-size: 1.5rem;
     }
@@ -439,10 +441,10 @@ footer{
     padding-top: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    background-image: url("../img/duotone_gaume.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    backdrop-filter: blur(2px);
+    // background-image: url("../img/duotone_gaume.jpg");
+    // background-repeat: no-repeat;
+    // background-size:cover;
+    
 }
 .number{
     width: 2rem;
@@ -495,7 +497,7 @@ footer{
         margin-left: 1rem;
     }
 }
-button {
+button, .btn-material {
     background-color:$secondary-user !important;
     color: white;
     border-radius: 15px;
@@ -503,7 +505,7 @@ button {
     margin-bottom: 2rem;
 }
 .btn-material{
-    color: white;
+    color: $primary-user;
     margin-left: 3rem;
 }
 
@@ -521,8 +523,12 @@ button {
 {
     width: 20rem;
     height:100%;
-    
 
+}
+.location_film
+{
+    width:30rem;
+    height:30rem;
 }
 //________________________Matérial________________
 .blanco
@@ -536,6 +542,23 @@ button {
 {
     background-color: white;
     width: 22rem;
-    border: 1px solid white;
+    border: 1px solid $primary-user;
     border-radius: 5px;
+}
+h3
+{
+    background-color: $primary-user
+}
+//_________________________Coworking__________________
+
+.map_connect {
+    width:20rem;
+    height: 20rem;
+}
+
+.form_zip {
+    border: 1px solid $primary-user;
+    padding: 1rem;
+    border-radius: 5px;
+    width:22rem;
 }

@@ -112,7 +112,7 @@
         </div>
         
         <div class="col-12 col-md-6 col-lg-4">
-            <img  class="location_photo"src="../img/salle_de_reunion.jpeg" />
+            <iframe class="location_film" src="https://mpembed.com/show/?m=uy6H9WHaSqu&lang=%20fr&play=1"></iframe>
             <div class="row">
                 <div class="col-6 description_room"> Superbe salle située à St Glin-glin adaptée pour 10 à 20 personnes. Elle comprend bureaux et chaises, un accès aux toilettes et un coffre à jouets.</div>
                 <div class="col-6 description_map"><img class="img_description_map"src="../img/coworking_map.jpeg"></div>
@@ -125,16 +125,25 @@
     </div>
     <footer></footer>
     <script>
-
         document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth'
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Chambres',
+                        start: '2021-04-01',
+                        end: '2021-04-05',
+                        editable: true,
+                        backgroundColor: "#885555"
+                    }
+                ],
+                
+            });
+            calendar.setOption('height', 430);
+            calendar.render();
         });
-        calendar.setOption('height', 430);
-        calendar.render();
-        });
-
     </script>
 </body>
 </html>
+
