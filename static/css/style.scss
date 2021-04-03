@@ -76,46 +76,95 @@ main {
 }
 
 .admin {
-    &-room__content {
-        width: 100%;
-        @include flex();
-        flex-wrap: wrap;
-    }
-    &-room__thumbnail {
-        min-width: 30rem;
-        margin: 3rem;
-        border: 0.5rem solid green;
-        border-radius: 2rem;
-        @include image-wrapper(25%, 22rem);
-        transition: scale 0.6s;
-        &-image {
-            @include image(0,0,50%,70%);
-            @include filter(brightness, 60%);
+    &-room {
+        &__content {
+            width: 100%;
+            @include flex();
+            flex-wrap: wrap;
+        }
+        &__thumbnail {
+            min-width: 30rem;
+            margin: 3rem;
+            border: 0.5rem solid green;
+            border-radius: 2rem;
+            @include image-wrapper(25%, 22rem);
             transition: scale 0.6s;
-            &:hover {
-                scale: 1.05;
+            &-image {
+                @include image(0,0,50%,70%);
+                @include filter(brightness, 60%);
+                transition: scale 0.6s;
+                &:hover {
+                    scale: 1.05;
+                    cursor: pointer;
+                }
+            }
+            &-name {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                color: white;
+                font-size: 1.5rem;
+                font-weight: 600;
+                text-shadow: 0.2rem 0.2rem 0.2rem black;
+            }
+            &:hover{
+                scale: 1.02;
+            }
+            &.problem {
+                border-color: red;
             }
         }
-        &-name {
-            position: absolute;
-            top: 1rem;
-            left: 1rem;
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 600;
-            text-shadow: 0.2rem 0.2rem 0.2rem black;
+    }
+    &-calendar {
+        @include flex();
+        &__content {
+            @include flex();
+            width: 100%;
         }
-        &:hover{
-            scale: 1.02;
+        &__calendar {
+            width: 90%;
+            max-width: 100rem;
+            font-size: 1.6rem !important;
         }
-        &.problem {
-            border-color: red;
+    }
+    &-inventory {
+        &__content {
+            max-width: 100%;
+            @include flex(row, space-evenly);
+            flex-wrap: wrap;
+            margin: 1rem;
+        }
+        &__column {
+            min-width: 30rem;
+            width: 45%;
+            padding: 4rem;
+            margin: 0.5rem;
+            border: 0.1rem solid $primary-admin;
+            border-radius: 0.5rem;
+        }
+        &__subtitle {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        &__list {
+            margin: 1rem;
+            list-style: none;
+        }
+        &__item {
+            margin-bottom: 1.2rem;
+            margin-left: 1rem;
+            font-size: 1.2rem;
+            &.problem {
+                color: red;
+                font-weight: 600;
+            }
         }
     }
     &__modal {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 10;
         width: 100vw;
         height: 100vh;
         opacity: 0;
@@ -132,8 +181,8 @@ main {
         }
         &-panel {
             position: relative;
-            @include flex(column, flex-start, flex-start);
             z-index: 5;
+            @include flex(column, flex-start, flex-start);
             width: 70%;
             min-width: 35rem;
             height: 80vh;
@@ -201,12 +250,43 @@ main {
                 font-weight: 600;
             }
         }
+        &-largelist {
+            margin: 1rem;
+            list-style: none;
+        }
+        &-largeitem {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            &.problem {
+                color: red;
+                font-weight: 600;
+            }
+        }
         &-link {
             margin: 0.8rem;
+        }
+        &-button {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background-color: $primary-admin;
+            border: 0.2rem solid $primary-admin;
+            border-radius: 0.3rem;
+            transition: all 0.6s;
+            &:hover {
+                color: $primary-admin;
+                background-color: white;
+            }
         }
         &.active {
             opacity: 1;
             pointer-events: all;
         }
     }
+}
+.fc-event-title {
+    font-size: 1.5rem;
+    font-weight: 500;
 }

@@ -3,62 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.6.0/main.min.css,npm/fullcalendar@5.6.0/main.min.css"/>
+    <script src="https://cdn.jsdelivr.net/combine/npm/fullcalendar@5.6.0,npm/fullcalendar@5.6.0/main.min.js,npm/fullcalendar@5.6.0/locales-all.min.js,npm/fullcalendar@5.6.0/locales-all.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Admin - Calendar</title>
+    <title>Admin - Calendrier</title>
 </head>
 <body>
     <header class="header admin">
-        <p class="header__title">Tableau de bord - Gestion de salles</p>
+        <p class="header__title">Tableau de bord - Calendrier</p>
         <img class="header__profile" src="../img/Maud_en_ete.jpg" alt="profile picture">
     </header>
     <main class="admin-calendar">
         <section class="admin-calendar__content">
-            <img src="../img/coworking.jpeg" alt="" class="admin-calendar__thumbnail-image">
+            <!-- <img src="../img/coworking.jpeg" alt="" class="admin-calendar__thumbnail-image"> -->
+            <div class="admin-calendar__calendar" id='calendar'></div>
         </section>
         <section class="admin__modal" id="modalCalendar">
             <div class="admin__modal-panel">
                 <div class="admin__modal-close" id="modalCalendarClose"></div>
-                <h2 class="admin__modal-title" id="modalCalendarTitle">Salle 2</h2>
-                <div class="admin__modal-content">
-                    <div class="admin__modal-column">
-                        <h2 class="admin__modal-subtitle">Locataires</h2>
-                        <div class="admin__modal-rent">
-                            <ul class="admin__modal-list">
-                                <li class="admin__modal-item"><strong>Précédent locataire : </strong><br>Les joyeux lurons</li>
-                                <li class="admin__modal-item"><strong>Date : </strong>31/03/2021 de 10h30 à 16h</li>
-                                <li class="admin__modal-item"><strong>Contact : </strong>info@joyeuxlurons.be / +32477/77.77.77</li>
-                            </ul>
-                        </div>
-                        <div class="admin__modal-rent">
-                            <ul class="admin__modal-list">
-                                <li class="admin__modal-item"><strong>Locataire actuel : </strong><br>HackBots</li>
-                                <li class="admin__modal-item"><strong>Date : </strong>03/04/2021 de 13h30 à 17h</li>
-                                <li class="admin__modal-item"><strong>Contact : </strong>hello@hackbots.vc / +32477/77.77.77</li>
-                                <li class="admin__modal-item"><strong>Nombre de participants : </strong>40</li>
-                            </ul>
-                        </div>
-                        <div class="admin__modal-rent">
-                            <ul class="admin__modal-list">
-                                <li class="admin__modal-item"><strong>Prochain locataire : </strong><br>Confrérie du gay boulet</li>
-                                <li class="admin__modal-item"><strong>Contact : </strong>admin@gayboulet.be</li>
-                                <li class="admin__modal-item"><strong>Date : </strong>10/04/2021 de 8h30 à 12h</li>
-                            </ul>
-                        </div>
-                        <a class="admin__modal-link" href="">→ calendrier des locations</a>
-                    </div>
-                    <div class="admin__modal-column">
-                        <h2 class="admin__modal-subtitle">État des lieux</h2>
-                        <ul class="admin__modal-list">
-                            <li class="admin__modal-item">Personnes présentes actuellement : 38</li>
-                            <li class="admin__modal-item problem">Projecteur manquant</li>
-                            <li class="admin__modal-item problem">2 chaise(s) manquante(s)</li>
-                        </ul>
-                    </div>
-                </div>
+                <h2 class="admin__modal-title" id="modalCalendarTitle">Salle multifonction 2</h2>
+                <ul class="admin__modal-largelist">
+                    <li class="admin__modal-largeitem"><strong>Date : </strong>03/04/2021 de 13h30 à 17h</li>
+                    <li class="admin__modal-largeitem"><strong>Locataire : </strong>HackBots</li>
+                    <li class="admin__modal-largeitem"><strong>Mail : </strong>hello@hackbots.vc</li>
+                    <li class="admin__modal-largeitem"><strong>Téléphone : </strong>+32477/77.77.77</li>
+                    <li class="admin__modal-largeitem"><strong>Nombre de participants : </strong>40</li>
+                </ul>
+                <a class="admin__modal-button" href="./admin-rooms.html">État des lieux</a>
             </div>
             <div class="admin__modal-background"></div>
         </section>
     </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Chambres',
+                        start: '2021-04-01',
+                        end: '2021-04-05',
+                        editable: true,
+                        backgroundColor: "#885555"
+                    },
+                    {
+                        title: 'Salle multifonction 2',
+                        start: '2021-04-03',
+                        end: '2021-04-03',
+                        editable: true,
+                        backgroundColor: "#558855"
+                    },
+                    {
+                        title: 'Salle multifonction 2',
+                        start: '2021-04-10',
+                        end: '2021-04-11',
+                        editable: true,
+                        backgroundColor: "#558855"
+                    },
+                    {
+                        title: 'Chambres',
+                        start: '2021-04-11',
+                        end: '2021-04-15',
+                        editable: true,
+                        backgroundColor: "#885555"
+                    },
+                    {
+                        title: 'Salle multifonction 2',
+                        start: '2021-04-15',
+                        end: '2021-04-16',
+                        editable: true,
+                        backgroundColor: "#558855"
+                    }
+                ],
+                eventClick: function(info) {
+                    showModal();
+                }
+            });
+            calendar.setOption('height', 680);
+            calendar.render();
+        });
+    </script>
     <script src="../js/modalCalendar.js"></script>
 </body>
 </html>

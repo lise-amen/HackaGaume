@@ -16,8 +16,8 @@ modal.querySelector("#modalCalendarClose").addEventListener("click", () => {
 });
 modal.querySelector(".admin__modal-panel").addEventListener("click", () => {
 });
-[...document.querySelectorAll(".admin-calendar__thumbnail-image")].forEach(room => {
-    room.addEventListener("click",() => {
+[...document.querySelectorAll(".fc-daygrid-day-events")].forEach(event => {
+    event.addEventListener("click",() => {
         showModal();
-    })
-})
+    });
+});

@@ -20,4 +20,4 @@ modal.querySelector(".admin__modal-panel").addEventListener("click", () => {
     room.addEventListener("click",() => {
         showModal();
     });
-})
+});
