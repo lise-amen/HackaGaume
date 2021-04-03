@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_240da82ba14e4c02a9c557de48b281ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_240da82ba14e4c02a9c557de48b281ae" ></div>
+        
+</body>
+<script>    
+    
+            var map_240da82ba14e4c02a9c557de48b281ae = L.map(
+                "map_240da82ba14e4c02a9c557de48b281ae",
+                {
+                    center: [49.6, 5.72],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0e308d210423429fbdd0e280b820f2d7 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+            var marker_3b9573b9ce18444d952c4cab35156063 = L.marker(
+                [50.01982527584446, 5.293780097541719],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_25702ae6949e4cb9ad62a5a301aadd1e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_644b89fa6c244988b94c1514cbe4a1f9 = $(`<div id="html_644b89fa6c244988b94c1514cbe4a1f9" style="width: 100.0%; height: 100.0%;"><b>Coworking GARE!</b></br>Agence de développement local de Saint-Hubert (ASBL)</br>Rue des Ardennes 14</br>6870 Saint-Hubert</br><a href="http://www.gare.space/">http://www.gare.space/</a></br><a href="hello@gare.space">hello@gare.space</a></br></div>`)[0];
+            popup_25702ae6949e4cb9ad62a5a301aadd1e.setContent(html_644b89fa6c244988b94c1514cbe4a1f9);
+        
+
+        marker_3b9573b9ce18444d952c4cab35156063.bindPopup(popup_25702ae6949e4cb9ad62a5a301aadd1e)
+        ;
+
+        
+    
+    
+            marker_3b9573b9ce18444d952c4cab35156063.bindTooltip(
+                `<div>
+                     Coworking GARE!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_429716a7b36e4763a354c98c3bba87a3 = L.marker(
+                [49.5881778793846, 6.0413590066859815],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_d2ae5aabfc1a48dfa46e2655f7ca3ddc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b22c821f59404aee8e66473ee151d4dd = $(`<div id="html_b22c821f59404aee8e66473ee151d4dd" style="width: 100.0%; height: 100.0%;"><b>Linc Coworking</b></br>Linc SA</br>rue de Luxembourg 55</br>L-4391 Pontpierre</br><a href="https://www.linc-coworking.lu">https://www.linc-coworking.lu</a></br><a href="coworking@linc.lu">coworking@linc.lu</a></br></div>`)[0];
+            popup_d2ae5aabfc1a48dfa46e2655f7ca3ddc.setContent(html_b22c821f59404aee8e66473ee151d4dd);
+        
+
+        marker_429716a7b36e4763a354c98c3bba87a3.bindPopup(popup_d2ae5aabfc1a48dfa46e2655f7ca3ddc)
+        ;
+
+        
+    
+    
+            marker_429716a7b36e4763a354c98c3bba87a3.bindTooltip(
+                `<div>
+                     Linc Coworking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3bbbe69fa62a488f90e51b95473d6a1e = L.marker(
+                [49.671650214648565, 6.02998922041111],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_3be6d90ddd964a9d919f61b3c1a4e068 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24d51ddb0f1e46ac9bb1be1f7347a4c8 = $(`<div id="html_24d51ddb0f1e46ac9bb1be1f7347a4c8" style="width: 100.0%; height: 100.0%;"><b>Le Jardin Secret</b></br>Paladium Coworking</br>rue des Mérovingiens 10A</br>L-8070 Bertrange</br><a href="https://paladium.lu/jardin-secret/">https://paladium.lu/jardin-secret/</a></br><a href=""></a></br></div>`)[0];
+            popup_3be6d90ddd964a9d919f61b3c1a4e068.setContent(html_24d51ddb0f1e46ac9bb1be1f7347a4c8);
+        
+
+        marker_3bbbe69fa62a488f90e51b95473d6a1e.bindPopup(popup_3be6d90ddd964a9d919f61b3c1a4e068)
+        ;
+
+        
+    
+    
+            marker_3bbbe69fa62a488f90e51b95473d6a1e.bindTooltip(
+                `<div>
+                     Le Jardin Secret
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f077a564b6e431ea99dd0abee26a7c3 = L.marker(
+                [49.548969156083324, 5.909901463905049],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_30fbd75fe9584cd492796fdd15e0ec4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d83f4d2653d47829af9837f43f5fd42 = $(`<div id="html_7d83f4d2653d47829af9837f43f5fd42" style="width: 100.0%; height: 100.0%;"><b>Urban Office</b></br></br>Avenue du Blues 9</br>L-4368 Sanem</br><a href="https://urbanoffice.lu/">https://urbanoffice.lu/</a></br><a href=""></a></br></div>`)[0];
+            popup_30fbd75fe9584cd492796fdd15e0ec4b.setContent(html_7d83f4d2653d47829af9837f43f5fd42);
+        
+
+        marker_1f077a564b6e431ea99dd0abee26a7c3.bindPopup(popup_30fbd75fe9584cd492796fdd15e0ec4b)
+        ;
+
+        
+    
+    
+            marker_1f077a564b6e431ea99dd0abee26a7c3.bindTooltip(
+                `<div>
+                     Urban Office
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caa67d19e6ea412cb931067c22e56b93 = L.marker(
+                [49.8693183239896, 5.253506410830824],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_9d4e5c88e43e4650bc6ba28a1a60eda7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8c83d4dfe1b421a95bd12ca66276ff3 = $(`<div id="html_b8c83d4dfe1b421a95bd12ca66276ff3" style="width: 100.0%; height: 100.0%;"><b>Le cellier du Baudet</b></br></br>Rue Des Munos 100</br>6880 Bertrix</br><a href="http://www.le-cellier-du-baudet.be/">http://www.le-cellier-du-baudet.be/</a></br><a href=""></a></br></div>`)[0];
+            popup_9d4e5c88e43e4650bc6ba28a1a60eda7.setContent(html_b8c83d4dfe1b421a95bd12ca66276ff3);
+        
+
+        marker_caa67d19e6ea412cb931067c22e56b93.bindPopup(popup_9d4e5c88e43e4650bc6ba28a1a60eda7)
+        ;
+
+        
+    
+    
+            marker_caa67d19e6ea412cb931067c22e56b93.bindTooltip(
+                `<div>
+                     Le cellier du Baudet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_340101e491cd4e089d1a64c861add1e4 = L.marker(
+                [49.22468768899016, 5.38198257597233],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_1b49a872282d42c3a72016a71a842c3c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d287d6b227b74802bd614c7b00306864 = $(`<div id="html_d287d6b227b74802bd614c7b00306864" style="width: 100.0%; height: 100.0%;"><b>NOburo</b></br></br>Place Chevert 11</br>55100 Verdun</br><a href="https://www.noburo.fr/">https://www.noburo.fr/</a></br><a href="info@noburo.fr">info@noburo.fr</a></br></div>`)[0];
+            popup_1b49a872282d42c3a72016a71a842c3c.setContent(html_d287d6b227b74802bd614c7b00306864);
+        
+
+        marker_340101e491cd4e089d1a64c861add1e4.bindPopup(popup_1b49a872282d42c3a72016a71a842c3c)
+        ;
+
+        
+    
+    
+            marker_340101e491cd4e089d1a64c861add1e4.bindTooltip(
+                `<div>
+                     NOburo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78d1d6c120e64d70bdf2ab54605014c8 = L.marker(
+                [49.6268566, 5.1757624],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_8c2e006a3b3c453c9244f226bb7a58a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8921d08e2c3d4896a250893d4263e382 = $(`<div id="html_8921d08e2c3d4896a250893d4263e382" style="width: 100.0%; height: 100.0%;"><b>La brique</b></br>Louis Gobron</br>Avenue de Blagny 24</br>8110 Carignan</br><a href="http://www.coworking-ardennes.fr/">http://www.coworking-ardennes.fr/</a></br><a href="info@coworking-ardennes.fr">info@coworking-ardennes.fr</a></br></div>`)[0];
+            popup_8c2e006a3b3c453c9244f226bb7a58a3.setContent(html_8921d08e2c3d4896a250893d4263e382);
+        
+
+        marker_78d1d6c120e64d70bdf2ab54605014c8.bindPopup(popup_8c2e006a3b3c453c9244f226bb7a58a3)
+        ;
+
+        
+    
+    
+            marker_78d1d6c120e64d70bdf2ab54605014c8.bindTooltip(
+                `<div>
+                     La brique
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1b9a91a1bdd4aa6b55836c25304f6fb = L.marker(
+                [49.2963455, 5.5830204],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_f4dacc3676c4490790cc5d13de736279 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_04abd5c476024a31a513d16a629a335a = $(`<div id="html_04abd5c476024a31a513d16a629a335a" style="width: 100.0%; height: 100.0%;"><b>Gemadom espace d’affaires</b></br></br>Route de Gémenos 1120</br>13400 Aubange</br><a href="https://www.neo-nomade.com/">https://www.neo-nomade.com/</a></br><a href="contact@neo-nomade.com">contact@neo-nomade.com</a></br></div>`)[0];
+            popup_f4dacc3676c4490790cc5d13de736279.setContent(html_04abd5c476024a31a513d16a629a335a);
+        
+
+        marker_c1b9a91a1bdd4aa6b55836c25304f6fb.bindPopup(popup_f4dacc3676c4490790cc5d13de736279)
+        ;
+
+        
+    
+    
+            marker_c1b9a91a1bdd4aa6b55836c25304f6fb.bindTooltip(
+                `<div>
+                     Gemadom espace d’affaires
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7ca7c1f6b1f4857a74c2cac14077250 = L.marker(
+                [50.240595038905674, 5.334782114646914],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_96f6040af8004d6ba1e9bd49e90adf76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92fe98d3022249168039f0a65f73cde4 = $(`<div id="html_92fe98d3022249168039f0a65f73cde4" style="width: 100.0%; height: 100.0%;"><b>e-Square</b></br>L'E-Square A.S.B.L</br>Rue Victor Libert 36J</br>6900 Marche-en-Famenne</br><a href="https://e-square.marche.be/">https://e-square.marche.be/</a></br><a href="e-square@marche.be">e-square@marche.be</a></br></div>`)[0];
+            popup_96f6040af8004d6ba1e9bd49e90adf76.setContent(html_92fe98d3022249168039f0a65f73cde4);
+        
+
+        marker_a7ca7c1f6b1f4857a74c2cac14077250.bindPopup(popup_96f6040af8004d6ba1e9bd49e90adf76)
+        ;
+
+        
+    
+    
+            marker_a7ca7c1f6b1f4857a74c2cac14077250.bindTooltip(
+                `<div>
+                     e-Square
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38b9a0b00a0b47b289c94c308741416e = L.marker(
+                [49.667342170685856, 5.8203597259420725],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_3e4caed6c61847bbbed71b10c634fd25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_651ddab8fd6a4bd6b02ffec1c9f927b1 = $(`<div id="html_651ddab8fd6a4bd6b02ffec1c9f927b1" style="width: 100.0%; height: 100.0%;"><b>Parc Naturel De Gaume asbl</b></br></br>Rue Camille Joset 1</br>6730 Tintigny</br><a href="https://parc-naturel-gaume.be/">https://parc-naturel-gaume.be/</a></br><a href="contact@pndg.be">contact@pndg.be</a></br></div>`)[0];
+            popup_3e4caed6c61847bbbed71b10c634fd25.setContent(html_651ddab8fd6a4bd6b02ffec1c9f927b1);
+        
+
+        marker_38b9a0b00a0b47b289c94c308741416e.bindPopup(popup_3e4caed6c61847bbbed71b10c634fd25)
+        ;
+
+        
+    
+    
+            marker_38b9a0b00a0b47b289c94c308741416e.bindTooltip(
+                `<div>
+                     Parc Naturel De Gaume asbl
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_623cbde7d4d64129963baabcd08f0f69 = L.marker(
+                [49.6488285, 5.8260931],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_bbef2ea7de66468b8f355c22b1b91052 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1328db58db6475fa0e60d72067dd0fd = $(`<div id="html_a1328db58db6475fa0e60d72067dd0fd" style="width: 100.0%; height: 100.0%;"><b>Greenlab Coworking</b></br>Greenlab Coworking (ASBL)</br>Zone Artisanale - Rue Claude Berg 34</br>6700 Arlon</br><a href="http://www.greenlab-coworking.com/">http://www.greenlab-coworking.com/</a></br><a href="contact@greenlab-coworking.com">contact@greenlab-coworking.com</a></br></div>`)[0];
+            popup_bbef2ea7de66468b8f355c22b1b91052.setContent(html_a1328db58db6475fa0e60d72067dd0fd);
+        
+
+        marker_623cbde7d4d64129963baabcd08f0f69.bindPopup(popup_bbef2ea7de66468b8f355c22b1b91052)
+        ;
+
+        
+    
+    
+            marker_623cbde7d4d64129963baabcd08f0f69.bindTooltip(
+                `<div>
+                     Greenlab Coworking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab1ba9e7988e410c975ceee27dad55c6 = L.marker(
+                [50.1095277, 4.9541233],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_2c497b559e974fe6a4ab5a1c77fa1740 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3950ab03f21848e8bb62697be01d87c4 = $(`<div id="html_3950ab03f21848e8bb62697be01d87c4" style="width: 100.0%; height: 100.0%;"><b>Beauraing Coworking</b></br>Pôle Beaurinois de Formation et de Développement (ASBL)</br>Faubourg Saint-Martin 22</br>5570 Beauraing</br><a href="http://beauraingcoworking.be/">http://beauraingcoworking.be/</a></br><a href="contact@beauraingcoworking.be">contact@beauraingcoworking.be</a></br></div>`)[0];
+            popup_2c497b559e974fe6a4ab5a1c77fa1740.setContent(html_3950ab03f21848e8bb62697be01d87c4);
+        
+
+        marker_ab1ba9e7988e410c975ceee27dad55c6.bindPopup(popup_2c497b559e974fe6a4ab5a1c77fa1740)
+        ;
+
+        
+    
+    
+            marker_ab1ba9e7988e410c975ceee27dad55c6.bindTooltip(
+                `<div>
+                     Beauraing Coworking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44fad01136824f1a87582ed71f64c9c2 = L.marker(
+                [50.4442158, 4.6802398],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_4a4f1a98875646d79c4c5aa1a4c4b067 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aaef085bd86247b4912e66efa710c377 = $(`<div id="html_aaef085bd86247b4912e66efa710c377" style="width: 100.0%; height: 100.0%;"><b>Je m'connecte Coworking Jemeppe</b></br>Agence de Développement Local de Jemeppe-sur-Sambre</br>Rue Emile Vandervelde 17</br>5190 Jemeppe-sur-Sambre</br><a href="https://www.jemconnecte.be/">https://www.jemconnecte.be/</a></br><a href="jemconnecte@adlj.be">jemconnecte@adlj.be</a></br></div>`)[0];
+            popup_4a4f1a98875646d79c4c5aa1a4c4b067.setContent(html_aaef085bd86247b4912e66efa710c377);
+        
+
+        marker_44fad01136824f1a87582ed71f64c9c2.bindPopup(popup_4a4f1a98875646d79c4c5aa1a4c4b067)
+        ;
+
+        
+    
+    
+            marker_44fad01136824f1a87582ed71f64c9c2.bindTooltip(
+                `<div>
+                     Je m'connecte Coworking Jemeppe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04afea3a4d494aceb9617fa88399a9d8 = L.marker(
+                [50.228265, 5.335673],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_d454d079de4d4822ace20534a0f37c58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_15deb1445e3549ce8fceef2cf2197435 = $(`<div id="html_15deb1445e3549ce8fceef2cf2197435" style="width: 100.0%; height: 100.0%;"><b>L'e-Square Coworking & Fablab</b></br>Ville de Marche-en-Famenne</br>Rue Victor Libert 36</br>6900 Marche-en-Famenne</br><a href="https://e-square.marche.be/">https://e-square.marche.be/</a></br><a href="e-square@marche.be">e-square@marche.be</a></br></div>`)[0];
+            popup_d454d079de4d4822ace20534a0f37c58.setContent(html_15deb1445e3549ce8fceef2cf2197435);
+        
+
+        marker_04afea3a4d494aceb9617fa88399a9d8.bindPopup(popup_d454d079de4d4822ace20534a0f37c58)
+        ;
+
+        
+    
+    
+            marker_04afea3a4d494aceb9617fa88399a9d8.bindTooltip(
+                `<div>
+                     L'e-Square Coworking & Fablab
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64094cb4afd543fb99146f0ee4407d20 = L.marker(
+                [50.6070014, 5.5403139],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_cbfba0f29fe14f409302ce512a67adb0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b1160699a8d4f15b3f3c35d9d0ba29a = $(`<div id="html_8b1160699a8d4f15b3f3c35d9d0ba29a" style="width: 100.0%; height: 100.0%;"><b>Cristal Hub</b></br>Cristal Hub</br>Quai Louva 21</br>4102 Seraing</br><a href="http://www.cristalhub.be/">http://www.cristalhub.be/</a></br><a href="info@cristalhub.be">info@cristalhub.be</a></br></div>`)[0];
+            popup_cbfba0f29fe14f409302ce512a67adb0.setContent(html_8b1160699a8d4f15b3f3c35d9d0ba29a);
+        
+
+        marker_64094cb4afd543fb99146f0ee4407d20.bindPopup(popup_cbfba0f29fe14f409302ce512a67adb0)
+        ;
+
+        
+    
+    
+            marker_64094cb4afd543fb99146f0ee4407d20.bindTooltip(
+                `<div>
+                     Cristal Hub
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93a93854357842b29354157c801e5ea1 = L.marker(
+                [50.663497, 3.612474],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_8fb962102e7e49b18f9c8fa0638985a8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc68e73df19145b6938c437a60faac1b = $(`<div id="html_cc68e73df19145b6938c437a60faac1b" style="width: 100.0%; height: 100.0%;"><b>ESCO Frasnes</b></br>Agence Intercommunale de développement des arrondissements de Tournai, d'Ath et de communes avoisinantes (SCRL)</br>Rue Henri Lemaire 2</br>7911 Frasnes-lez-Anvaing</br><a href="http://www.escoworking.be/">http://www.escoworking.be/</a></br><a href="menegazzi@ideta.be">menegazzi@ideta.be</a></br></div>`)[0];
+            popup_8fb962102e7e49b18f9c8fa0638985a8.setContent(html_cc68e73df19145b6938c437a60faac1b);
+        
+
+        marker_93a93854357842b29354157c801e5ea1.bindPopup(popup_8fb962102e7e49b18f9c8fa0638985a8)
+        ;
+
+        
+    
+    
+            marker_93a93854357842b29354157c801e5ea1.bindTooltip(
+                `<div>
+                     ESCO Frasnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_081e50a19cbf445f8e2cad5e66c2d1b9 = L.marker(
+                [50.0492786, 4.31677],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_bf5d8cc670504772b1fc68db29e2cf82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_efddcdab4a994623838b90b94d3f1fe3 = $(`<div id="html_efddcdab4a994623838b90b94d3f1fe3" style="width: 100.0%; height: 100.0%;"><b>La Ferme Coworking</b></br>Ville de Chimay</br>Rue Rogier 10</br>6460 Chimay</br><a href="http://la-ferme.be/">http://la-ferme.be/</a></br><a href="nicolas@la-ferme.be">nicolas@la-ferme.be</a></br></div>`)[0];
+            popup_bf5d8cc670504772b1fc68db29e2cf82.setContent(html_efddcdab4a994623838b90b94d3f1fe3);
+        
+
+        marker_081e50a19cbf445f8e2cad5e66c2d1b9.bindPopup(popup_bf5d8cc670504772b1fc68db29e2cf82)
+        ;
+
+        
+    
+    
+            marker_081e50a19cbf445f8e2cad5e66c2d1b9.bindTooltip(
+                `<div>
+                     La Ferme Coworking
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dabb3ad289a2486bb3b98e9e7e484684 = L.marker(
+                [50.6655232, 4.62482],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_3f56350d94264b38b4dd406d815526bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52e531a1f3a64f73948aa2443df661b6 = $(`<div id="html_52e531a1f3a64f73948aa2443df661b6" style="width: 100.0%; height: 100.0%;"><b>Louvain Coworking Space</b></br>Louvain Coworking Space</br>Chemin du Cyclotron 6</br>1348 Ottignies-Louvain-la-Neuve</br><a href="http://www.louvaincoworking.be/">http://www.louvaincoworking.be/</a></br><a href="info@louvaincoworking.com">info@louvaincoworking.com</a></br></div>`)[0];
+            popup_3f56350d94264b38b4dd406d815526bf.setContent(html_52e531a1f3a64f73948aa2443df661b6);
+        
+
+        marker_dabb3ad289a2486bb3b98e9e7e484684.bindPopup(popup_3f56350d94264b38b4dd406d815526bf)
+        ;
+
+        
+    
+    
+            marker_dabb3ad289a2486bb3b98e9e7e484684.bindTooltip(
+                `<div>
+                     Louvain Coworking Space
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3d9748c2e4f46cc899c45026c38dc15 = L.marker(
+                [50.6927152, 4.0389675],
+                {}
+            ).addTo(map_240da82ba14e4c02a9c557de48b281ae);
+        
+    
+        var popup_ec055cbc75a94b1fa40ff670b1ced348 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1da1420dbc6f4d66861105c648a00878 = $(`<div id="html_1da1420dbc6f4d66861105c648a00878" style="width: 100.0%; height: 100.0%;"><b>The Mug Enghien</b></br>The Mug Enghien (SPRL)</br>Place Pierre Delannoy 50</br>7850 Enghien</br><a href="http://www.themug.be/enghien/">http://www.themug.be/enghien/</a></br><a href="marine@themug.be">marine@themug.be</a></br></div>`)[0];
+            popup_ec055cbc75a94b1fa40ff670b1ced348.setContent(html_1da1420dbc6f4d66861105c648a00878);
+        
+
+        marker_e3d9748c2e4f46cc899c45026c38dc15.bindPopup(popup_ec055cbc75a94b1fa40ff670b1ced348)
+        ;
+
+        
+    
+    
+            marker_e3d9748c2e4f46cc899c45026c38dc15.bindTooltip(
+                `<div>
+                     The Mug Enghien
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
