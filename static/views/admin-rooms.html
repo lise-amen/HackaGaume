@@ -8,7 +8,18 @@
 </head>
 <body>
     <header class="header admin">
-        <p class="header__title">Tableau de bord - Gestion de salles</p>
+        <ul class="header__nav-list">
+            <p class="header__title">Tableau de bord - Gestion de salles</p>
+            <li class="header__nav-item">
+                <a href="./admin-calendar.html"><span>Calendrier</span></a>
+            </li>
+            <li class="header__nav-item current">
+                <a href="./admin-rooms.html"><span>État des lieux</span></a>
+            </li>
+            <li class="header__nav-item">
+                <a href="./admin-inventory.html"><span>Inventaire</span></a>
+            </li>
+        </ul>
         <img class="header__profile" src="../img/Maud_en_ete.jpg" alt="profile picture">
     </header>
     <main class="admin-room">
@@ -36,6 +47,10 @@
             <div class="admin-room__thumbnail problem">
                 <img class="admin-room__thumbnail-image" src="../img/salle_de_reunion.jpeg" alt="room thumbnail">
                 <p class="admin-room__thumbnail-name">Salle web</p>
+            </div>
+            <div class="admin-room__thumbnail">
+                <img class="admin-room__thumbnail-image" src="../img/pexels-elle-hughes-2696064.jpg" alt="room thumbnail">
+                <p class="admin-room__thumbnail-name">Cuisine</p>
             </div>
         </section>
         <section class="admin__modal" id="modalRoom">

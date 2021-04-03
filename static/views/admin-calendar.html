@@ -10,7 +10,18 @@
 </head>
 <body>
     <header class="header admin">
-        <p class="header__title">Tableau de bord - Calendrier</p>
+        <ul class="header__nav-list">
+            <p class="header__title">Tableau de bord - Calendrier</p>
+            <li class="header__nav-item current">
+                <a href="./admin-calendar.html"><span>Calendrier</span></a>
+            </li>
+            <li class="header__nav-item">
+                <a href="./admin-rooms.html"><span>État des lieux</span></a>
+            </li>
+            <li class="header__nav-item">
+                <a href="./admin-inventory.html"><span>Inventaire</span></a>
+            </li>
+        </ul>
         <img class="header__profile" src="../img/Maud_en_ete.jpg" alt="profile picture">
     </header>
     <main class="admin-calendar">
@@ -23,11 +34,11 @@
                 <div class="admin__modal-close" id="modalCalendarClose"></div>
                 <h2 class="admin__modal-title" id="modalCalendarTitle">Salle multifonction 2</h2>
                 <ul class="admin__modal-largelist">
-                    <li class="admin__modal-largeitem"><strong>Date : </strong>03/04/2021 de 13h30 à 17h</li>
-                    <li class="admin__modal-largeitem"><strong>Locataire : </strong>HackBots</li>
-                    <li class="admin__modal-largeitem"><strong>Mail : </strong>hello@hackbots.vc</li>
-                    <li class="admin__modal-largeitem"><strong>Téléphone : </strong>+32477/77.77.77</li>
-                    <li class="admin__modal-largeitem"><strong>Nombre de participants : </strong>40</li>
+                    <li class="admin__modal-largeitem"><strong>Date : </strong><span id="date">03/04/2021 de 13h30 à 17h</span></li>
+                    <li class="admin__modal-largeitem"><strong>Locataire : </strong><span id="renter">HackBots</span></li>
+                    <li class="admin__modal-largeitem"><strong>Mail : </strong><span id="email">hello@hackbots.vc</span></li>
+                    <li class="admin__modal-largeitem"><strong>Téléphone : </strong><span id="phone">+32477/77.77.77</span></li>
+                    <li class="admin__modal-largeitem"><strong>Nombre de participants : </strong><span id="peopleAmount">40</span></li>
                 </ul>
                 <a class="admin__modal-button" href="./admin-rooms.html">État des lieux</a>
             </div>
@@ -45,39 +56,93 @@
                         start: '2021-04-01',
                         end: '2021-04-05',
                         editable: true,
-                        backgroundColor: "#885555"
+                        backgroundColor: "#885555",
+                        extendedProps: {
+                            "room": 'Chambres',
+                            "date": "Du 01/04/2021 à 18h30 au 04/04/2021 à 10h",
+                            "renter": "HackBots",
+                            "email": "hello@hackbots.vc",
+                            "phone": "+32477/77.77.77",
+                            "peopleAmount": 40
+                        }
                     },
                     {
                         title: 'Salle multifonction 2',
                         start: '2021-04-03',
-                        end: '2021-04-03',
+                        end: '2021-04-04',
                         editable: true,
-                        backgroundColor: "#558855"
+                        backgroundColor: "#558855",
+                        extendedProps: {
+                            "room": 'Salle multifonction 2',
+                            "date": "Le 03/04/2021 de 13h30 à 17h",
+                            "renter": "HackBots",
+                            "email": "hello@hackbots.vc",
+                            "phone": "+32477/77.77.77",
+                            "peopleAmount": 40
+                        }
                     },
                     {
                         title: 'Salle multifonction 2',
                         start: '2021-04-10',
                         end: '2021-04-11',
                         editable: true,
-                        backgroundColor: "#558855"
+                        backgroundColor: "#558855",
+                        extendedProps: {
+                            "room": 'Salle multifonction 2',
+                            "date": "Le 10/04/2021 de 07h30 à 12h30",
+                            "renter": "Adrien et Gaston de Gerlache",
+                            "email": "g.toussaint@pndg.be",
+                            "phone": "+32477/77.77.77",
+                            "peopleAmount": 100
+                        }
+                    },
+                    {
+                        title: 'Cuisine',
+                        start: '2021-04-10',
+                        end: '2021-04-11',
+                        editable: true,
+                        backgroundColor: "#558888",
+                        extendedProps: {
+                            "room": 'Cuisine',
+                            "date": "Le 10/04/2021 de 09h30 à 19h",
+                            "renter": "Geoffrey",
+                            "email": "g.toussaint@pndg.be",
+                            "phone": "+32477/77.77.77",
+                            "peopleAmount": 100
+                        }
                     },
                     {
                         title: 'Chambres',
                         start: '2021-04-11',
                         end: '2021-04-15',
                         editable: true,
-                        backgroundColor: "#885555"
+                        backgroundColor: "#885555",
+                        extendedProps: {
+                            "room": 'Chambres',
+                            "date": "Du 11/04/2021 à 13h30 au 14/04/2021 à 17h",
+                            "renter": "26e unité de Hannut",
+                            "email": "unite@26hannut.be",
+                            "peopleAmount": 100
+                        }
                     },
                     {
-                        title: 'Salle multifonction 2',
+                        title: 'Salle multifonction 3',
                         start: '2021-04-15',
                         end: '2021-04-16',
                         editable: true,
-                        backgroundColor: "#558855"
+                        backgroundColor: "#555588",
+                        extendedProps: {
+                            "room": 'Salle multifonction 3',
+                            "date": "Le 15/04/2021 de 11h à 18h",
+                            "renter": "Abdel & Raymond",
+                            "email": "info@saucissongaumais.be",
+                            "phone": "+32456/78.98.76",
+                            "peopleAmount": 70
+                        }
                     }
                 ],
-                eventClick: function(info) {
-                    showModal();
+                eventClick: info => {
+                    showModal(info.event.extendedProps);
                 }
             });
             calendar.setOption('height', 680);

@@ -31,6 +31,59 @@ body {
 .header__title {
   margin: auto 2rem;
 }
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+.header__nav-item {
+  position: relative;
+  height: 100%;
+}
+.header__nav-item.current a::before {
+  height: 10%;
+}
+.header__nav-item a {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 0.5rem;
+  text-decoration: none;
+}
+.header__nav-item a span {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: color 0.5s;
+}
+.header__nav-item a::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  transition: height 0.5s;
+}
+.header__nav-item a:hover {
+  text-decoration: none;
+}
+.header__nav-item a:hover span {
+  z-index: 1;
+  color: #9D3B4E;
+}
+.header__nav-item a:hover::before {
+  height: 100%;
+}
 .header__profile {
   height: 80%;
   border-radius: 50%;
@@ -57,12 +110,12 @@ main {
   flex-wrap: wrap;
 }
 .admin-room__thumbnail {
-  min-width: 30rem;
+  min-width: 25rem;
   margin: 3rem;
-  border: 0.5rem solid green;
+  border: 0.5rem solid #8ca93d;
   border-radius: 2rem;
-  width: 25%;
-  height: 22rem;
+  width: 20%;
+  height: 18rem;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -103,7 +156,7 @@ main {
   scale: 1.02;
 }
 .admin-room__thumbnail.problem {
-  border-color: red;
+  border-color: #c70125;
 }
 .admin-calendar {
   display: flex;
@@ -135,10 +188,20 @@ main {
 .admin-inventory__column {
   min-width: 30rem;
   width: 45%;
+  height: 70rem;
   padding: 4rem;
   margin: 0.5rem;
   border: 0.1rem solid #9D3B4E;
   border-radius: 0.5rem;
+}
+.admin-inventory__column-map {
+  min-width: 30rem;
+  width: 45%;
+  height: 70rem;
+  margin: 0.5rem;
+  border: 0.1rem solid #9D3B4E;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .admin-inventory__subtitle {
   font-size: 2rem;
