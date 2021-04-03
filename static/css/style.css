@@ -366,3 +366,185 @@ main {
   font-size: 1.5rem;
   font-weight: 500;
 }
+
+.navbar {
+  height: 10rem;
+}
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-user {
+  background-color: #204243;
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-home {
+  background-image: url("../img/duotone_gaume.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 1.5rem;
+}
+.navbar-part {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #f4c011;
+}
+
+.identity {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 30px;
+  border-right: 8rem;
+}
+
+.row_card {
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 32rem;
+  margin-top: 4.8rem;
+}
+.card a {
+  text-decoration: none;
+  color: white;
+}
+.card-title {
+  background-color: #204243;
+  color: white;
+  height: 6.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+.card-img {
+  overflow: hidden;
+}
+
+.fa {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+footer {
+  background-color: #204243;
+  height: 5rem;
+  width: 100%;
+}
+
+.container_location {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-image: url("../img/duotone_gaume.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+}
+
+.number {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.instruction p {
+  max-width: 85%;
+}
+
+.calendar {
+  width: 100% !important;
+  border: 1px solid #204243;
+  border-radius: 5px;
+}
+
+.location_photo {
+  width: 30rem;
+  height: 25rem;
+  border-radius: 1rem;
+}
+
+.time {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-around;
+  width: 22rem;
+  border: 1px solid #204243;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.form_room {
+  border: 1px solid #204243;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  background-color: white;
+}
+
+.form_room_2 {
+  margin-top: 4rem;
+}
+
+.form-check-label {
+  margin-left: 1rem;
+}
+
+button {
+  background-color: #f4c011 !important;
+  color: white;
+  border-radius: 15px;
+  margin-top: 2rem;
+}
+
+.btn-material {
+  color: white;
+  margin-left: 3rem;
+}
+
+.description_room, .description_map {
+  border: 1px solid #204243;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  width: 20rem;
+  background-color: white;
+  overflow: hidden;
+}
+
+.img_description_map {
+  width: 20rem;
+  height: 100%;
+}
+
+.blanco {
+  background-color: white;
+  width: 22rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.form_blanco {
+  background-color: white;
+  width: 22rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+h3 {
+  background-color: #204243;
+}

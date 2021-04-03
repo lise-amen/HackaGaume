@@ -5,6 +5,7 @@
 }
 
 $primary-user: #204243;
+$secondary-user:#f4c011;
 $primary-admin: #9D3B4E;
 
 @mixin flex($direction: row, $justify: center, $align: center) {
@@ -345,7 +346,198 @@ main {
         }
     }
 }
+
 .fc-event-title {
     font-size: 1.5rem;
     font-weight: 500;
+}
+.navbar{
+   
+    height: 10rem;
+    &-brand
+    {
+        color: white;
+        font-size: 1.5rem;
+    }
+    &-user{
+        background-color: $primary-user;
+        color: white;
+        font-size: 1.5rem;
+    }
+    &-home
+    {
+        background-image: url("../img/duotone_gaume.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 1.5rem;
+    }
+    &-part
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+        
+
+}
+
+
+.nav-link{
+    color: white;
+    &:hover{
+        color:$secondary-user;
+    }
+}
+.identity
+{
+    width:8rem;
+    height: 8rem;
+    border-radius: 30px;
+    border-right: 8rem;
+}
+.row_card
+{
+    justify-content: space-evenly;
+}
+.card{
+    width: 32rem;
+    margin-top: 4.8rem;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    &-title
+    {
+        background-color: $primary-user;
+        color:white;
+        height: 6.4rem;
+        padding-top: 0.5rem;
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    &-img
+    {
+        overflow:hidden;
+    }
+}
+
+.fa
+{
+    height: 1.5rem;
+    width: 1.5rem;
+    color: white;
+}
+footer{
+    background-color: $primary-user;
+    height: 5rem;
+    width: 100%;
+}
+//______________________________Réservation Salles__________________________
+.container_location 
+{
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-image: url("../img/duotone_gaume.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(2px);
+}
+.number{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+}
+.instruction p {
+    max-width: 85%;
+}
+.calendar{
+    width: 100% !important;
+    border: 1px solid $primary-user;
+    border-radius: 5px;
+}
+
+.location_photo{
+    width: 30rem;
+    height:25rem;
+    border-radius: 1rem;
+}
+.time
+{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 22rem;
+    border: 1px solid $primary-user;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    background-color:white;
+}
+.form_room
+{
+    border: 1px solid $primary-user;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    width: 100%;
+    background-color: white;
+    
+}
+.form_room_2
+{
+    margin-top: 4rem;
+}
+.form-check-label {
+    margin-left: 1rem;
+}
+button
+{
+    background-color:$secondary-user !important;
+    color: white;
+    border-radius: 15px;
+    margin-top: 2rem;
+}
+.btn-material{
+    color: white;
+    margin-left: 3rem;
+}
+
+.description_room, .description_map{
+    border: 1px solid $primary-user;
+    margin-top:1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    width: 20rem; 
+    background-color: white;
+    overflow:hidden;
+}
+.img_description_map
+{
+    width: 20rem;
+    height:100%;
+    
+
+}
+//________________________Matérial________________
+.blanco
+{
+    background-color: white;
+    width: 22rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.form_blanco
+{
+    background-color: white;
+    width: 22rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+h3
+{
+    background-color: $primary-user;
 }
